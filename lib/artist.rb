@@ -7,13 +7,13 @@ class Artist
   end 
   
   def songs
-    .all.select do |post|
-      post.author = self
+    Song.all.select do |song|
+      song.artist = self
     end 
   end 
     
-    def add_post(post)
-      post.author = self
+    def add_song(song)
+      song.artist = self
     end 
     
     def add_post_by_title(title) 
