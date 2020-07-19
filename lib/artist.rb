@@ -6,22 +6,5 @@ class Artist
     @name = name
   end 
   
-  def songs
-    Song.all.select do |post|
-      song.artist = self
-    end 
-  end 
-  
-  def add_song(song)
-    song.artist = self
-  end 
-  
-  def add_song_by_name(song name)
-   song = Song.new(song)
-      song.artist = self
-    end 
-    
-     def self.song_count
-      Song.all.count
-    end 
+
 end
